@@ -49,7 +49,7 @@ This prevents certain styling from looking strange, as the current Bootstrap bui
 ## Adding Bootstrap Styling
 At this point, you can use Bootstrap styles on any of your HTML elements. The way that Bootstrap styles are implemented are through special Bootstrap CSS classes that can be added to HTML element tags.
 
-If you'd like to follow along, you can use [this link](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_default) to access a free online HTML editor (you don't even have to sign up for anything!). Copy the following code and paste it into the editor. This code constitutes a simple web page with the Bootstrap functionality included, but does not utilize Bootstrap in HTML elements yet:
+The rest of the tutorial I'll be showing some examples of things you can do with Bootstrap. If you'd like to follow along, you can use [this link](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_default) to access a free online HTML editor (you don't even have to sign up for anything!). Copy the following code and paste it into the editor. This code constitutes a simple web page with the Bootstrap functionality included, but does not utilize Bootstrap in HTML elements yet:
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -83,14 +83,17 @@ When displayed on a web browser, the code above looks like this:<br>
 ![Example Web Page without Bootstrap](webpageNoBootstrap.png)<br>
 *Figure 1: Example Web Page without Bootstrap Classes*
 
+### Format List Elements
 Now let's see what happens if we add a Bootstrap class to the list elements. Inside the starting `<ul>` tag, add `class="list-group"`, and in each `<li>` start tag, add the code `class="list-group-item"`.
 
-This adds the Bootstrap class "list-group" to your unordered list element, and the Bootstrap class "list-group-item" to your list items. See how the list looks better formatted:
+This adds the Bootstrap class "list-group" to your unordered list element, and the Bootstrap class "list-group-item" to your list items. See how the list looks after adding these classes:
 
 ![Web Page with List Bootstrap Classes](webpageListBootstrap.png)<br>
 *Figure 2: Web Page with Bootstrap List Classes Implemented*
 
 The Bootstrap classes already have their specific CSS modifications made to them, which is why you don't have to include any of your own personal stylesheets for Bootstrap to work.
+
+### Add a Bootstrap Container
 
 Let's clean up the page a bit. Around your `<h1>` and `<ul>` tags, add a `<div>` tag that includes the `container` Bootstrap class, as follows:
 ```html
@@ -104,7 +107,9 @@ Adding the `<div>` element with the Bootstrap container class around the other e
 ![Web Page bound by Bootstrap container](containedWebpage.png)<br>
 *Figure 3: Web Page Bound by Bootstrap Container*
 
-This makes it look better than it did before, but let's implement one last thing to really make it look nice. Add the following code just after your starting `<body>` tag:
+### Add a Navbar
+
+It looks better than it did before, but let's implement one last thing to really make it look nice. Add the following code just after your starting `<body>` tag:
 ```html
 <nav class="navbar navbar-light bg-light">
     <span class="navbar-brand mb-0 h1">My Web Page</span>
@@ -118,7 +123,7 @@ Now your web page has a navbar with some nice CSS formatting already applied to 
 
 Now we have a decently presentable web page! It doesn't have much functionality yet, but the HTML elements have some pretty nice styling. The best part is, it was *incredibly* easy to add the styling in. Without Bootstrap, we would've had to spend time adding each specific CSS property to each element. Of course, it would have been possible to make our own CSS classes to perform the same functionality that the Bootstrap classes performed, but including Bootstrap classes made the job much easier for us.
 
-For those interested, the completed web page HTML file is included in this Github repository in the `src` file, listed as [index.html](src/index.html).
+- For those interested, the completed web page HTML file is included in this Github repository in the `src` file, listed as [index.html](src/index.html).
 
 Now you know the fundamentals for adding Bootstrap class elements to your web pages. To add Bootstrap styling, simply add classes to HTML elements. The [Bootstrap website](https://getbootstrap.com/docs/4.3/components/) provides examples of each type of element that can be modified by Bootstrap classes.
 
